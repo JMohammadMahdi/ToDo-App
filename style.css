@@ -1,0 +1,140 @@
+:root {
+    --contanerBack: #fff;
+    --AddToDoBack: #ebecef;
+    --AddToDoCol: #929296;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+@font-face {
+    font-family: "IranSansX";
+    src: url(./Font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsLight";
+    src: url(./Font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsReg";
+    src: url(./Font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(./Font/Poppins-Bold.ttf);
+}
+
+body {
+    height: 100vh;
+    font-family: 'PoppinsLight';
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contaner {
+    width: 500px;
+    min-height: 200px;
+    background-color: var(--contanerBack);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'PoppinsBold';
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4158D0;
+}
+
+.addTo-Do {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 25px 0 20px;
+}
+
+.addTo-Do input {
+    width: 100%;
+    height: 45px;
+    font-family: 'PoppinsReg';
+    font-size: 1rem;
+    background-color: var(--AddToDoBack);
+    color: var(--AddToDoCol);
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.addToDoBTN {
+    width: 100px;
+    height: 45px;
+    border-radius: 25px;
+    font-family: 'PoppinsBold';
+    font-size: 1rem;
+    background: #ff643c;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.To-DoDetails ul {
+    margin-left: 10px;
+    color: #5a5a5a;
+}
+
+.To-DoDetails li {
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.To-DoDetails img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete {
+    width: 15px !important;
+    height: 15px !important;
+    position: absolute;
+    right: 10px;
+    visibility: visible;
+}
+
+.delete:hover {
+    animation: rotateDeleteIcon 0.5s;
+}
+
+@keyframes rotateDeleteIcon {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.list-items {
+    position: relative;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
