@@ -9,11 +9,12 @@
     margin: 0;
     outline: none;
     border: none;
+    font-family: 'PoppinsReg';
 }
 
 @font-face {
     font-family: "IranSansX";
-    src: url(./Font/Poppins-Light.ttf);
+    src: url(./Font/IRANSansX-Medium.ttf);
 }
 
 @font-face {
@@ -33,7 +34,6 @@
 
 body {
     height: 100vh;
-    font-family: 'PoppinsLight';
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     display: flex;
@@ -52,8 +52,14 @@ body {
 }
 
 h1 {
-    font-family: 'PoppinsBold';
     font-size: 2rem;
+    font-weight: 600;
+    color: #4158D0;
+}
+
+h2 {
+    font-family: 'IranSansX';
+    font-size: 1.1rem;
     font-weight: 600;
     color: #4158D0;
 }
@@ -70,7 +76,7 @@ h1 {
 .addTo-Do input {
     width: 100%;
     height: 45px;
-    font-family: 'PoppinsReg';
+    font-family: 'IranSansX';
     font-size: 1rem;
     background-color: var(--AddToDoBack);
     color: var(--AddToDoCol);
@@ -121,7 +127,7 @@ h1 {
 }
 
 .delete:hover {
-    animation: rotateDeleteIcon 0.5s;
+    animation: rotateDeleteIcon 0.5s normal;
 }
 
 @keyframes rotateDeleteIcon {
