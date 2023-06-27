@@ -58,6 +58,7 @@ h1 {
 }
 
 h2 {
+    max-width: 350px;
     font-family: 'IranSansX';
     font-size: 1.1rem;
     font-weight: 600;
@@ -80,7 +81,7 @@ h2 {
     font-size: 1rem;
     background-color: var(--AddToDoBack);
     color: var(--AddToDoCol);
-    padding: 1rem 2rem;
+    padding: 1rem 6.5rem 1rem 2rem;
     box-sizing: border-box;
     border-radius: 50px;
 }
@@ -105,7 +106,7 @@ h2 {
 
 .To-DoDetails li {
     list-style-type: none;
-    height: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     gap: 20px;
